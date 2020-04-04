@@ -61,7 +61,7 @@ a:hover {
 }
 
 a:hover, a:focus {
-  color: #b8a07e;
+  color: #ff8800;
   text-decoration: underline;
 }
 
@@ -91,12 +91,12 @@ p {
 }
 
 ::-moz-selection {
-  background: #b8a07e;
+  background: #ff8800;
   color: #fff;
 }
 
 ::selection {
-  background: #b8a07e;
+  background: #ff8800;
   color: #fff;
 }
 
@@ -165,7 +165,7 @@ p {
 }
 
 .hvr-shutter-in-horizontal:hover {
-  background: #b8a07e;
+  background: #ff8800;
 }
 
 .mb-30 {
@@ -260,7 +260,7 @@ nav ul li a {
   font-weight: 700;
   margin-bottom: 10px;
   text-transform: uppercase;
-  color: #fff;
+  color: #222;
 }
 
 .header-content p {
@@ -269,7 +269,7 @@ nav ul li a {
   margin-top: 0;
   margin-bottom: 30px;
   text-transform: capitalize;
-  color: #fff;
+  color: #222;
   font-weight: 500;
 }
 
@@ -279,7 +279,7 @@ nav ul li a {
 }
 
 .header-content .list-social li ion-icon {
-  color: #fff;
+  color: #222;
   font-size: 15px;
 }
 
@@ -296,7 +296,7 @@ nav ul li a {
 
 #about .div-img-bg {
   padding-bottom: 30px;
-  border: 20px solid #b8a07e;
+  border: 20px solid #ff8800;
 }
 
 #about .div-img-bg .about-img img {
@@ -350,9 +350,9 @@ nav ul li a {
   line-height: 22px;
 }
 
-.services-block i {
+.services-block ion-icon {
   font-size: 44px;
-  color: #b8a07e;
+  color: #ff8800;
   line-height: 44px;
 }
 
@@ -379,7 +379,7 @@ nav ul li a {
 }
 
 .services-carousel .owl-dot.active {
-  background-color: #b8a07e;
+  background-color: #ff8800;
 }
 
 .owl-nav {
@@ -424,7 +424,7 @@ nav ul li a {
 }
 
 #portfolio .portfolio-list .nav li:hover, #portfolio .portfolio-list .nav li.filter-active  {
-  color: #b8a07e;
+  color: #ff8800;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
@@ -499,7 +499,7 @@ nav ul li a {
 }
 
 .journal-block .journal-info .journal-txt h4 a:hover {
-  color: #b8a07e;
+  color: #ff8800;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
@@ -610,7 +610,7 @@ nav ul li a {
 }
 
 #footer .socials-media ul li a:hover {
-  color: #b8a07e;
+  color: #ff8800;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
