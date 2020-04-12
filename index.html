@@ -31,6 +31,7 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -202,54 +203,19 @@
 
                 <div class="portfolio-list">
 
-                    <ul class="nav list-unstyled" id="portfolio-flters">
+                    <ul class="nav list-unstyled" id="portfolio-filters">
                         <li class="filter filter-active" data-filter=".all">all</li>
-                        <li class="filter" data-filter=".branding">branding</li>
-                        <li class="filter" data-filter=".mockups">mockups</li>
-                        <li class="filter" data-filter=".uikits">ui kits</li>
-                        <li class="filter" data-filter=".webdesign">web design</li>
-                        <li class="filter" data-filter=".photography">photography</li>
+                        <li class="filter" data-filter=".personnal">personnal</li>
+                        <li class="filter" data-filter=".school">school</li>
+                        <li class="filter" data-filter=".client">for clients</li>
                     </ul>
 
                 </div>
 
-                <div class="portfolio-container">
+                <div class="portfolio-container" id="portfolio-container">
 
-                    <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
-                        <a class="popup-img" href="images/portfolio/1.jpg">
-                            <img src="images/portfolio/1.jpg" alt="img">
-                        </a>
-                    </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits photography">
-                        <a class="popup-img" href="images/portfolio/2.jpg">
-                            <img src="images/portfolio/2.jpg" alt="img">
-                        </a>
-                    </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding webdesig photographyn">
-                        <a class="popup-img" href="images/portfolio/3.jpg">
-                            <img src="images/portfolio/3.jpg" alt="img">
-                        </a>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups webdesign photography">
-                        <a class="popup-img" href="images/portfolio/4.jpg">
-                            <img src="images/portfolio/4.jpg" alt="img">
-                        </a>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits photography">
-                        <a class="popup-img" href="images/portfolio/5.jpg">
-                            <img src="images/portfolio/5.jpg" alt="img">
-                        </a>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
-                        <a class="popup-img" href="images/portfolio/6.jpg">
-                            <img src="images/portfolio/6.jpg" alt="img">
-                        </a>
-                    </div>
 
                 </div>
             </div>
@@ -258,78 +224,6 @@
 
 </div>
 <!-- End section portfolio -->
-
-
-<!-- start section journal
-<div id="journal" class="text-left paddsection">
-
-    <div class="container">
-        <div class="section-title text-center">
-            <h2>journal</h2>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="journal-block">
-            <div class="row">
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="journal-info">
-
-                        <a href="blog-single.html"><img src="images/blog-post-1.jpg" class="img-responsive"
-                                                        alt="img"></a>
-
-                        <div class="journal-txt">
-
-                            <h4><a href="blog-single.html">SO LETS MAKE THE MOST IS BEAUTIFUL</a></h4>
-                            <p class="separator">To an English person, it will seem like simplified English
-                            </p>
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="journal-info">
-
-                        <a href="blog-single.html"><img src="images/blog-post-2.jpg" class="img-responsive"
-                                                        alt="img"></a>
-
-                        <div class="journal-txt">
-
-                            <h4><a href="#blog-single.html">WE'RE GONA MAKE DREAMS COMES</a></h4>
-                            <p class="separator">To an English person, it will seem like simplified English
-                            </p>
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="journal-info">
-
-                        <a href="blog-single.html"><img src="images/blog-post-3.jpg" class="img-responsive"
-                                                        alt="img"></a>
-
-                        <div class="journal-txt">
-
-                            <h4><a href="blog-single.html">NEW LIFE CIVILIZATIONS TO BOLDLY</a></h4>
-                            <p class="separator">To an English person, it will seem like simplified English
-                            </p>
-
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-</div>
-End section journal -->
 
 
 <!-- start sectoion contact -->
@@ -346,7 +240,8 @@ End section journal -->
                         <ul class="contact-details">
                             <li><span>Rouen, Normandy</span></li>
                             <li><span>France</span></li>
-                            <li><span><a href="mailto:florian.leroux3@laposte.net" style="text-decoration: none;">florian.leroux3@laposte.net</a></span></li>
+                            <li><span><a href="mailto:florian.leroux3@laposte.net" style="text-decoration: none;">florian.leroux3@laposte.net</a></span>
+                            </li>
                         </ul>
 
                     </div>
@@ -405,7 +300,7 @@ End section journal -->
         </div>
     </div>
 </div>
-<!-- start sectoion contact -->
+<!-- start section contact -->
 
 
 <!-- start section footer -->
@@ -453,6 +348,7 @@ End section journal -->
 
 <!-- Template Main Javascript File -->
 <script src="js/main.js"></script>
+<script src="js/github-repo.js"></script>
 
 </body>
 

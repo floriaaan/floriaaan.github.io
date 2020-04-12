@@ -110,9 +110,6 @@ $(document).ready(function() {
       type: 'image',
       removalDelay: 300,
       mainClass: 'mfp-with-zoom',
-      gallery: {
-        enabled: true
-      },
       zoom: {
         enabled: true, // By default it's false, so don't forget to enable it
 
@@ -147,11 +144,11 @@ $(window).load(function(){
     layoutMode: 'fitRows'
   });
 
-  $('#portfolio-flters li').on( 'click', function() {
-    $("#portfolio-flters li").removeClass('filter-active');
+  $('#portfolio-filters li').on( 'click', function() {
+    $("#portfolio-filters li").removeClass('filter-active');
     $(this).addClass('filter-active');
 
     portfolioIsotope.isotope({ filter: $(this).data('filter') });
   });
 
-})
+});

@@ -441,11 +441,11 @@ nav ul li a {
 .portfolio-thumbnail {
   margin-bottom: 30px;
   overflow: hidden;
-  min-height: 260px;
+  min-height: 100px;
 }
 
 .portfolio-thumbnail img {
-  max-width: 100%;
+  max-width: 50%;
 }
 
 /*-----------------------------------------------------------------------------------*/
