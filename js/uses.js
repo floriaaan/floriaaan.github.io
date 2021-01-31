@@ -114,6 +114,7 @@ const uses = [
     text: "gray-100",
     type: "Back-end",
     icon: "logo-laravel",
+    large:true
   },
   {
     name: "NodeJS",
