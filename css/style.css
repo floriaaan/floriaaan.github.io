@@ -74,7 +74,6 @@ nav ul li a {
   letter-spacing: 0.1em;
   font-weight: 500;
   line-height: 14px;
-  text-transform: uppercase;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
@@ -212,9 +211,7 @@ nav ul li a {
   font-family: 'Poppins', helvetica;
   font-weight: 500;
   line-height: 16px;
-  text-transform: uppercase;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
 }
 
 .logo {
@@ -268,7 +265,6 @@ nav ul li a {
   letter-spacing: 5px;
   margin-top: 0;
   margin-bottom: 30px;
-  text-transform: capitalize;
   color: #222;
   font-weight: 500;
 }
@@ -279,7 +275,6 @@ nav ul li a {
 }
 
 .header-content .list-social li ion-icon {
-  color: #222;
   font-size: 15px;
 }
 
@@ -291,34 +286,8 @@ nav ul li a {
   width: 100%;
   height: auto;
   background: #f7f7f7;
-  padding-top: 190px;
 }
 
-#about .div-img-bg {
-  padding-bottom: 30px;
-  border: 20px solid #ff8800;
-}
-
-#about .div-img-bg .about-img img {
-  width: 100%;
-  box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
-  margin-top: -60px;
-  margin-left: 40px;
-  height: 400px;
-  object-fit: cover;
-}
-
-#about .about-descr .p-heading {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  text-align: left;
-}
-
-#about .about-descr .separator {
-  max-width: 80%;
-  margin-bottom: 0;
-  text-align: left;
-}
 
 /*-----------------------------------------------------------------------------------*/
 /*   Services
