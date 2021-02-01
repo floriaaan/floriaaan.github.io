@@ -58,7 +58,7 @@ const bonusList = {
     type: "slowmo",
     do: () => {
       let tmp = DELAY;
-      DELAY = 200;
+      DELAY = 300;
       setTimeout(() => {
         DELAY = tmp;
       }, 3000);
@@ -119,7 +119,7 @@ function checkApple() {
     scoreValue++;
     renderHTML();
     dots++;
-    DELAY -= DELAY * 0.0005;
+    DELAY -= DELAY * 0.001;
     locateApple();
   }
 }
@@ -243,7 +243,7 @@ function locateBonus() {
   r = Math.floor(Math.random() * MAX_RAND);
   bonus_y = r * DOT_SIZE;
 
-  bonus_type = "slowmo";
+  bonus_type = Math.random() > 0.5 ? "slowmo" : "divide";
 }
 
 function gameCycle() {

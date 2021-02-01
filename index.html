@@ -182,7 +182,7 @@
                         <div class="flex flex-row items-center">
                             <img class="w-9 h-9" src="https://floriaaan.github.io/temper/img/favicon.png" />
                             <div class="flex flex-col ml-4">
-                                <h1 class="text-white text-xs md:text-base flex flex-row">
+                                <h1 class="text-white text-xs md:text-base flex flex-row items-center">
                                     Temper
                                     <div class="flex ml-2 flex-row justify-center items-center font-medium py-1 px-2 bg-white rounded-full text-yellow-400 bg-gray-800 border border-gray-700"
                                         style="line-height: 0;">
@@ -332,7 +332,7 @@
                                     transform="translate(-42.28 -42.37)" />
                             </svg>
                             <div class="flex flex-col ml-4">
-                                <h1 class="text-white text-xs md:text-base flex flex-row">
+                                <h1 class="text-white text-xs md:text-base flex flex-row items-center">
                                     OpenMeet
                                     <div class="flex ml-2 flex-row justify-center items-center font-medium py-1 px-2 bg-white rounded-full text-yellow-600 bg-yellow-100 border border-yellow-200"
                                         style="line-height: 0;">
@@ -415,7 +415,7 @@
                                 </g>
                             </svg>
                             <div class="flex flex-col ml-4">
-                                <h1 class="text-white text-xs md:text-base flex flex-row  ">
+                                <h1 class="text-white text-xs md:text-base flex flex-row items-center">
                                     Rebu Eats
                                     <div class="flex ml-2 flex-row justify-center items-center font-medium py-1 px-2 bg-white rounded-full text-purple-700 bg-purple-100 border border-purple-300"
                                         style="line-height: 0;">
@@ -531,8 +531,9 @@
                 I also practice guitar and piano, similarly, only by ear without lessons.
 
             </p>
-            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-4 mt-8 flex-shrink">
-                <div class="col-span-3 row-span-2 video-container">
+            <div
+                class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-4 mt-8 flex-shrink">
+                <div class="col-span-2 row-span-2 video-container">
                     <iframe width="auto" src="https://www.youtube.com/embed/QCwZhSciy5I" frameborder="0"
                         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
@@ -573,37 +574,34 @@
 
 
     <!-- start section footer -->
-    <div id="footer" class="flex flex-col justify-center">
-        <div class="socials-media flex flex-row justify-center">
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <img src="images/logo.png" class="w-10 h-10" alt="logo">
 
-            <ul class="list-unstyled">
-                <li>
-                    <a href="https://github.com/floriaaan/">
-                        <ion-icon name="logo-github"></ion-icon>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/floriaaan1/">
-                        <ion-icon name="logo-twitter"></ion-icon>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/florian-leroux-827470185/">
-                        <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:florian.leroux3@laposte.net">
-                        <ion-icon name="mail"></ion-icon>
-                    </a>
-                </li>
-            </ul>
-
+                <span class="ml-3 text-xl">Floriaaan</span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 ">©
+                2021 Floriaaan —
+                <a href="https://twitter.com/t3tra_" class="text-gray-600 ml-1" rel="noopener noreferrer"
+                    target="_blank">@t3tra_</a>
+            </p>
+            <span class="inline-flex space-x-3 sm:ml-auto justify-center sm:justify-start">
+                <a class="text-gray-400" href="https://github.com/floriaaan/">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a class="text-gray-400" href="https://twitter.com/t3tra_/">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+                <a class="text-gray-400" href="https://www.linkedin.com/in/floriaaan">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+                <a class="text-gray-400" href="mailto:florian.leroux3@laposte.net">
+                    <ion-icon name="mail"></ion-icon>
+                </a>
+            </span>
         </div>
-
-        <p class="text-center">&copy; Copyrights Floriaaan. All rights reserved.</p>
-
-    </div>
+    </footer>
     <!-- End section footer -->
 
     <!-- JavaScript Libraries -->
