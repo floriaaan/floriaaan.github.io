@@ -52,6 +52,7 @@
                     <li><a href="#header" class="smoothScroll">#home</a></li>
                     <li><a href="#about" class="smoothScroll">#about</a></li>
                     <li><a href="#uses" class="smoothScroll">#uses</a></li>
+                    <li><a href="#musics" class="smoothScroll">#musics</a></li>
                 </ul>
 
             </div>
@@ -65,7 +66,7 @@
 
         <div class="container px-6 md:px-10 lg:px-16 xl:px-16">
             <div class="header-content">
-                <h1>Floriaaan | <br class="block md:hidden lg:hidden xl:hidden"/><span class="typed"></span></h1>
+                <h1>Floriaaan | <br class="block md:hidden lg:hidden xl:hidden" /><span class="typed"></span></h1>
                 <p style="margin-bottom: 10px !important;">developper, student, high-tech lover</p>
 
                 <ul class="list-unstyled list-social">
@@ -75,7 +76,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/floriaaan1/">
+                        <a href="https://twitter.com/t3tra_/">
                             <ion-icon name="logo-twitter"></ion-icon>
                         </a>
                     </li>
@@ -84,8 +85,16 @@
                             <ion-icon name="logo-linkedin"></ion-icon>
                         </a>
                     </li>
+                    <li>
+                        <a href="mailto:florian.leroux3@laposte.net">
+                            <ion-icon name="mail"></ion-icon>
+                        </a>
+                    </li>
                 </ul>
             </div>
+        </div>
+        <div class="hidden md:flex lg:flex xl:flex justify-center " id="scrollIcon">
+            <div class='icon-scroll'></div>
         </div>
     </div>
     <!-- End section header -->
@@ -96,7 +105,7 @@
         <div class="flex flex-col lg:grid lg:gap-4  lg:grid-cols-4   ml-2 pt-4 px-6" style="font-size: 13px;">
             <!-- Beginning of the component about CESI -->
             <div class="bg-indigo-600 lg:order-1 lg:row-span-1  lg:col-span-2 rounded-lg mb-5 lg:mb-0">
-                <div class="mx-6 my-8 ">
+                <div class="mx-8 my-8 ">
                     <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
                         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -173,8 +182,17 @@
                         <div class="flex flex-row items-center">
                             <img class="w-9 h-9" src="https://floriaaan.github.io/temper/img/favicon.png" />
                             <div class="flex flex-col ml-4">
-                                <h1 class="text-white text-xs md:text-base  ">
-                                    Temper</h1>
+                                <h1 class="text-white text-xs md:text-base flex flex-row">
+                                    Temper
+                                    <div class="flex ml-2 flex-row justify-center items-center font-medium py-1 px-2 bg-white rounded-full text-yellow-400 bg-gray-800 border border-gray-700"
+                                        style="line-height: 0;">
+                                        <div slot="avatar">
+                                            <ion-icon name="logo-ionic"></ion-icon>
+                                        </div>
+                                        <div class="text-xs ml-2 font-normal leading-none max-w-full flex-initial">
+                                            Ionic React</div>
+                                    </div>
+                                </h1>
                                 <h2 class="text-white text-xs md:text-base  text-opacity-50 ">
                                     Your Home companion</h2>
                             </div>
@@ -314,8 +332,17 @@
                                     transform="translate(-42.28 -42.37)" />
                             </svg>
                             <div class="flex flex-col ml-4">
-                                <h1 class="text-white text-xs md:text-base  ">
-                                    OpenMeet</h1>
+                                <h1 class="text-white text-xs md:text-base flex flex-row">
+                                    OpenMeet
+                                    <div class="flex ml-2 flex-row justify-center items-center font-medium py-1 px-2 bg-white rounded-full text-yellow-600 bg-yellow-100 border border-yellow-200"
+                                        style="line-height: 0;">
+                                        <div slot="avatar">
+                                            <ion-icon name="logo-laravel"></ion-icon>
+                                        </div>
+                                        <div class="text-xs ml-2 font-normal leading-none max-w-full flex-initial">
+                                            Laravel</div>
+                                    </div>
+                                </h1>
                                 <h2 class="text-white text-xs md:text-base  text-opacity-50 ">
                                     An application for groups</h2>
                             </div>
@@ -323,7 +350,7 @@
 
                         </div>
                         <ion-icon name="arrow-forward-outline"
-                            class="w-4 h-4 text-yellow-200 hover:text-gray-800 transition duration-300"></ion-icon>
+                            class="w-4 h-4 text-yellow-200 hover:text-gray-100 transition duration-300"></ion-icon>
 
                     </div>
 
@@ -338,7 +365,7 @@
                         application. ”</p>
                 </div>
             </div>
-            <!-- Ending of the component about Jeanette Harmon -->
+            <!-- Ending of the component about OpenMeet -->
 
             <!-- Beginning of the component about Rebu Eats -->
             <div class="bg-purple-800 lg:order-4 lg:row-span-2  col-span-2 rounded-lg  mb-2 lg:mb-0  lg:pb-14 ">
@@ -388,8 +415,17 @@
                                 </g>
                             </svg>
                             <div class="flex flex-col ml-4">
-                                <h1 class="text-white text-xs md:text-base  ">
-                                    Rebu Eats</h1>
+                                <h1 class="text-white text-xs md:text-base flex flex-row  ">
+                                    Rebu Eats
+                                    <div class="flex ml-2 flex-row justify-center items-center font-medium py-1 px-2 bg-white rounded-full text-purple-700 bg-purple-100 border border-purple-300"
+                                        style="line-height: 0;">
+                                        <div slot="avatar">
+                                            <ion-icon name="logo-react"></ion-icon>
+                                        </div>
+                                        <div class="text-xs ml-2 font-normal leading-none max-w-full flex-initial">
+                                            React Native</div>
+                                    </div>
+                                </h1>
                                 <h2 class="text-white text-xs md:text-base  text-opacity-50 ">
                                     A popular delivery app clone</h2>
                             </div>
@@ -439,11 +475,13 @@
                         Enedis, formely ERDF</h1>
                     <h2 class=" text-xs md:text-base text-gray-200 pl-10 md:pl-12 ">
                         Work-study Developer</h2>
-                    <h3 class=" text-xs md:text-base text-gray-200 pl-10 md:pl-12 ">
-                        (August 2020 - September 2021)</h3>
+
                 </div>
+
                 <div class="px-3 lg:px-5 lg:-mt-4 mb-2 lg:mb-0">
-                    <p class=" text-xl text-gray-100 font-semibold px-4 lg:px-0 -mt-2 lg:-mt-0">
+                    <h3 class="-mt-6 mb-2 text-xs md:text-base text-gray-200 pl-6 md:pl-8 ">
+                        (August 2020 - September 2021)</h3>
+                    <p class=" text-xl text-gray-100 font-semibold px-4 lg:px-0 -mt-1 lg:-mt-0">
                         Florian is autonomous, invested and inspires confidence</p>
                     <p class=" font-medium md:text-sm text-gray-100 px-4 lg:px-0  lg:pr-3 mt-2 lg:-mt-1 ">
                         “ Florian, in the development of a new application, was able to show the necessary hindsight,
@@ -464,11 +502,11 @@
     <!-- end section about us -->
 
 
-    <!-- start section services -->
+    <!-- start section uses -->
     <div id="uses">
         <div class="px-16 py-3 pb-12">
-            <h4 class="text-3xl text-gray-700 p-12">
-                Uses
+            <h4 class="text-3xl text-gray-700 p-3 pt-4 pb-8">
+                Uses 🛠️
             </h4>
             <div class="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
                 id="uses_grid">
@@ -477,7 +515,57 @@
 
 
     </div>
-    <!-- end section services -->
+    <!-- end section uses -->
+
+    <!-- start section musics -->
+    <div id="musics" class="bg-gray-100">
+        <div class="px-16 py-3 pb-12 pt-10">
+            <h4 class="text-3xl text-gray-700 p-3">
+                Musics 🎼
+            </h4>
+            <p class="text-gray-600 text-sm ">
+
+                I learn how to compose music in a self-taught way.
+                I make music in my spare time, mainly computer-assisted with FL Studio 20. I particularly like to
+                compose, not having any music theory lessons, I take advantage of my musical ear.
+                I also practice guitar and piano, similarly, only by ear without lessons.
+
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-4 mt-8 flex-shrink">
+                <div class="col-span-3 row-span-2 video-container">
+                    <iframe width="auto" src="https://www.youtube.com/embed/QCwZhSciy5I" frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="soundcloud col-span-2">
+                    <iframe width="100%" scrolling="no" frameborder="no" allow="autoplay"
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/963686125&color=%23fcc424&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                    <div
+                        style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                        <a href="https://soundcloud.com/floriaaan" title="Floriaaan" target="_blank"
+                            style="color: #cccccc; text-decoration: none;">Floriaaan</a> · <a
+                            href="https://soundcloud.com/floriaaan/geometry-dash" title="GEOMETRY DASH" target="_blank"
+                            style="color: #cccccc; text-decoration: none;">GEOMETRY DASH</a>
+                    </div>
+                </div>
+                <div class="soundcloud col-span-2">
+                    <iframe width="100%" scrolling="no" frameborder="no" allow="autoplay"
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/429248694&color=%23fcc424&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                    <div
+                        style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                        <a href="https://soundcloud.com/floriaaan" title="Floriaaan" target="_blank"
+                            style="color: #cccccc; text-decoration: none;">Floriaaan</a> · <a
+                            href="https://soundcloud.com/floriaaan/id1304" title="PRINCE OF PERSIA" target="_blank"
+                            style="color: #cccccc; text-decoration: none;">PRINCE OF PERSIA</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <!-- end section musics -->
 
 
 
@@ -502,6 +590,11 @@
                 <li>
                     <a href="https://www.linkedin.com/in/florian-leroux-827470185/">
                         <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:florian.leroux3@laposte.net">
+                        <ion-icon name="mail"></ion-icon>
                     </a>
                 </li>
             </ul>

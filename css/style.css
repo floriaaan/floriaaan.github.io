@@ -188,9 +188,9 @@ nav {
   width: 100%;
   padding: 20px;
   display: none;
-  -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
-  -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
-  box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.18);
 }
 
 .nav-menu {
@@ -282,6 +282,45 @@ nav ul li a {
 
 .header-content .list-social li ion-icon {
   font-size: 15px;
+}
+
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+
+.icon-scroll {
+  width: 40px;
+  height: 70px;
+  margin-left: -20px;
+  bottom: 10%;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 3px #fff;
+  border-radius: 25px;
+}
+
+.icon-scroll:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -604,4 +643,28 @@ nav ul li a {
 
 .credits {
   font-size: 13px;
+}
+
+.video-container {
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+}
+
+.video-container::after {
+  padding-top: 56.25%;
+  display: block;
+  content: "";
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.soundcloud .widget {
+  border: 0 !important;
 }
