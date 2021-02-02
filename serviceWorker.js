@@ -1,18 +1,15 @@
 const staticApp = "floriaaan-app";
 const assets = [
-  "/",
-  "/index.html",
-  "/css/style.css",
-  "/css/responsive.css",
-  "/js/main.js",
-  "/js/uses.js",
-  "/lib/jquery/jquery.js",
-  "/lib/jquery/jquery-migrate.js",
-  "/lib/typed/typed.js",
-  "/images/home-bg.png",
-  "/images/logo.png",
-  "/images/recipe5.jpg",
-  "/images/recipe6.jpg",
+  "index.html",
+  "css/style.css",
+  "css/responsive.css",
+  "js/main.js",
+  "js/uses.js",
+  "lib/jquery/jquery.js",
+  "lib/jquery/jquery-migrate.js",
+  "lib/typed/typed.js",
+  "images/home-bg.png",
+  "images/logo.png",
 ];
 
 self.addEventListener("install", (installEvent) => {
