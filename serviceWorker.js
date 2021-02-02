@@ -1,4 +1,4 @@
-staticApp = "floriaaan-app";
+const staticApp = "floriaaan-app";
 const assets = [
   "/",
   "/index.html",
@@ -15,17 +15,17 @@ const assets = [
   "/images/recipe6.jpg",
 ];
 
-self.addEventListener("install", installEvent => {
+self.addEventListener("install", (installEvent) => {
   installEvent.waitUntil(
-    caches.open(staticApp).then(cache => {
+    caches.open(staticApp).then((cache) => {
       cache.addAll(assets);
     })
   );
 });
 
-self.addEventListener("fetch", fetchEvent => {
+self.addEventListener("fetch", (fetchEvent) => {
   fetchEvent.respondWith(
-    caches.match(fetchEvent.request).then(res => {
+    caches.match(fetchEvent.request).then((res) => {
       return res || fetch(fetchEvent.request);
     })
   );
