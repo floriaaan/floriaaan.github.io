@@ -144,6 +144,6 @@ $(document).ready(function () {
   });
 
   function activateCheats() {
-    window.location.pathname = "portfolio/snake.html";
+    window.location.pathname = "snake.html";
   }
 });
