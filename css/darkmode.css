@@ -1,0 +1,97 @@
+/* @media (prefers-color-scheme: dark) { */
+:root {
+  --white: #222;
+  --light: #222;
+  --dark: #fff;
+
+  --theme-primary: #ffb700;
+
+  --theme-white: #fff;
+  --theme-lighter: #ddd;
+  --theme-light: #bbb;
+
+  --theme-medium-up: #999;
+  --theme-medium: #777;
+  --theme-medium-down: #555;
+
+  --theme-dark: #333;
+  --theme-darker: #222;
+  --theme-darkerplus: #111;
+  --theme-black: #000;
+}
+
+html {
+  background-color: var(--theme-black);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--theme-white);
+}
+
+#about {
+  background-color: var(--theme-black);
+}
+#uses {
+  background-color: var(--theme-black);
+  color: var(--theme-white);
+}
+
+.text-gray-700 {
+  color: var(--theme-light);
+}
+
+ion-icon.text-gray-700 {
+  color: #292929;
+}
+
+.bg-white {
+  background-color: var(--theme-darker) !important;
+  color: var(--theme-white);
+}
+
+.border-gray-100 {
+  border-color: var(--theme-dark);
+}
+
+pre {
+  color: var(--theme-white);
+}
+
+#main-nav {
+  background-color: var(--theme-darkerplus);
+  color: var(--theme-lighter);
+}
+
+.nav-menu li {
+  border: 0;
+}
+
+#musics {
+  background-color: var(--theme-black);
+  color: var(--theme-light);
+}
+
+.text-gray-600 {
+  color: var(--theme-light);
+}
+
+footer {
+  background-color: var(--theme-darkerplus);
+  color: var(--theme-primary);
+}
+
+.text-gray-900 {
+  color: var(--theme-primary);
+}
+
+.text-gray-500 {
+  color: var(--theme-lighter);
+}
+
+/* } */

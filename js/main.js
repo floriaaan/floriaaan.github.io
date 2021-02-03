@@ -59,13 +59,12 @@ $(document).ready(function () {
     if (scroll > 200) {
       $("#main-nav, #main-nav-subpage").slideDown(700);
       $("#main-nav-subpage").removeClass("subpage-nav");
-      $('#scrollIcon').fadeOut();
+      $("#scrollIcon").fadeOut();
     } else {
       $("#main-nav").slideUp(700);
       $("#main-nav-subpage").hide();
       $("#main-nav-subpage").addClass("subpage-nav");
-      $('#scrollIcon').fadeIn();
-
+      $("#scrollIcon").fadeIn();
     }
   });
 
@@ -148,11 +147,65 @@ $(document).ready(function () {
   }
 });
 
+// ========================================================================= //
+//  PWA
+// ========================================================================= //
+
 if ("serviceWorker" in navigator) {
-  window.addEventListener("load", function() {
+  window.addEventListener("load", function () {
     navigator.serviceWorker
       .register("/serviceWorker.js")
-      .then(res => console.log("service worker registered"))
-      .catch(err => console.log(err));
+      .then((res) => console.log("service worker registered"))
+      .catch((err) => console.log(err));
   });
+}
+
+// ========================================================================= //
+//  DARKMODE
+// ========================================================================= //
+
+let darkMode_match =
+  window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: dark)").matches;
+if (localStorage.getItem("theme") === "dark") {
+  darkMode_match = true;
+} else if (localStorage.getItem("theme") === "light") {
+  darkMode_match = false;
+}
+
+const darkModeElement = document.getElementById("darkMode");
+darkModeElement.addEventListener("click", onDarkModeChange);
+darkModeElement.innerHTML = darkMode_match ? "#dark" : "#light";
+
+function createDarkModeLink() {
+  if (!darkMode_match) {
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.type = "text/css";
+    link.href = "css/darkmode.css";
+    link.id = "darkModeLink";
+    document.getElementsByTagName("head")[0].appendChild(link);
+  }
+}
+
+function init() {
+  console.log(darkMode_match);
+  if (darkMode_match) {
+    darkModeElement.innerHTML = darkMode_match ? "#dark" : "#light";
+    createDarkModeLink();
+  }
+}
+init();
+
+function onDarkModeChange() {
+  darkMode_match = darkModeElement.innerHTML === "#dark";
+  if (!darkMode_match) {
+    createDarkModeLink();
+    darkModeElement.innerHTML = "#dark";
+  } else {
+    let link = document.getElementById("darkModeLink");
+    link.parentNode.removeChild(link);
+    darkModeElement.innerHTML = "#light";
+  }
+  localStorage.setItem("theme", darkMode_match ? "dark" : "light");
 }

@@ -64,9 +64,15 @@ a:hover {
   transition: all 0.5s ease-in-out 0s;
 }
 
+nav ul li:hover,
+nav ul li:focus,
 a:hover,
 a:focus {
   color: #ff8800;
+}
+
+a:hover,
+a:focus {
   text-decoration: underline;
 }
 
@@ -208,6 +214,7 @@ nav ul li {
   margin-left: 40px;
 }
 
+nav ul li,
 nav ul li a {
   padding: 2px 0 0 0;
   position: relative;
