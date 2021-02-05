@@ -9,7 +9,7 @@ const assets = [
   "/lib/jquery/jquery.min.js",
   "/lib/jquery/jquery-migrate.min.js",
   "/lib/typed/typed.js",
-  "/images/home-bg.png",
+  "/images/home-bg.jpg",
   "/images/logo.png",
 ];
 
