@@ -190,7 +190,7 @@ function createDarkModeLink() {
 
 function init() {
   console.log(darkMode_match);
-  if (darkMode_match) {
+  if (!darkMode_match) {
     darkModeElement.innerHTML = darkMode_match ? "#dark" : "#light";
     createDarkModeLink();
   }
