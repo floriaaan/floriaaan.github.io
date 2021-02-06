@@ -205,4 +205,7 @@ function onDarkModeChange() {
     darkModeElement.innerHTML = "#light";
   }
   localStorage.setItem("theme", darkMode_match ? "light" : "dark");
+  if ($(window).width() < 768) {
+    $(".nav-menu").slideUp();
+  }
 }
