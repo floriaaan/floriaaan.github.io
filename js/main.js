@@ -164,6 +164,14 @@ if ("serviceWorker" in navigator) {
 //  DARKMODE
 // ========================================================================= //
 
+function init() {
+  console.log(darkMode_match);
+  if (darkMode_match) {
+    createDarkModeLink();
+  }
+  darkModeElement.innerHTML = darkMode_match ? "#dark" : "#light";
+}
+
 let darkMode_match =
   window.matchMedia &&
   window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -175,27 +183,16 @@ if (localStorage.getItem("theme") === "dark") {
 
 const darkModeElement = document.getElementById("darkMode");
 darkModeElement.addEventListener("click", onDarkModeChange);
-darkModeElement.innerHTML = darkMode_match ? "#dark" : "#light";
+init();
 
 function createDarkModeLink() {
-  if (!darkMode_match) {
-    var link = document.createElement("link");
-    link.rel = "stylesheet";
-    link.type = "text/css";
-    link.href = "css/darkmode.css";
-    link.id = "darkModeLink";
-    document.getElementsByTagName("head")[0].appendChild(link);
-  }
+  var link = document.createElement("link");
+  link.rel = "stylesheet";
+  link.type = "text/css";
+  link.href = "css/darkmode.css";
+  link.id = "darkModeLink";
+  document.getElementsByTagName("head")[0].appendChild(link);
 }
-
-function init() {
-  console.log(darkMode_match);
-  if (!darkMode_match) {
-    darkModeElement.innerHTML = darkMode_match ? "#dark" : "#light";
-    createDarkModeLink();
-  }
-}
-init();
 
 function onDarkModeChange() {
   darkMode_match = darkModeElement.innerHTML === "#dark";
@@ -207,5 +204,5 @@ function onDarkModeChange() {
     link.parentNode.removeChild(link);
     darkModeElement.innerHTML = "#light";
   }
-  localStorage.setItem("theme", darkMode_match ? "dark" : "light");
+  localStorage.setItem("theme", darkMode_match ? "light" : "dark");
 }
