@@ -1,24 +1,3 @@
-/**
- * <div class="flex flex-col lg:flex-row w-full lg:space-x-2 space-y-2 lg:space-y-0 mb-2 lg:mb-4">
-        <div class="w-full lg:w-1/4">
-            <div class="widget w-full p-4 rounded-lg bg-white border border-gray-100 dark:bg-gray-900 dark:border-gray-800">
-                <div class="flex flex-row items-center justify-between">
-                    <div class="flex flex-col">
-                        <div class="text-xs uppercase font-light text-gray-500">
-                            Technology
-                        </div>
-                        <div class="text-xl font-bold">
-                            React
-                        </div>
-                    </div>
-                    <ion-icon name="logo-react"></ion-icon>
-                </div>
-            </div>
-        </div>
-        ...
-    </div>
- */
-
 // const uses = {
 //   frontend: [
 //     { name: "React", color: "blue-400", text: "gray-100" },

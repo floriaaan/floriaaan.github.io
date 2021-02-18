@@ -51,7 +51,7 @@ ion-icon.text-gray-700 {
 }
 
 .bg-white {
-  background-color: var(--theme-darker) !important;
+  background-color: var(--theme-darker);
   color: var(--theme-white);
 }
 
